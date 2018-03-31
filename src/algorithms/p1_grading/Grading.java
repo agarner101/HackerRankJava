@@ -24,7 +24,18 @@ package algorithms.p1_grading;
  */
 public class Grading {
 
+    /**
+     * Attempt 0.
+     * Note: Mutates input array
+     */
     static int[] gradingStudents0(int[] grades) {
-        return null; //TODO
+        for (int i = 0; i < grades.length; i++) {
+            int grade = grades[i];
+            int rem = grade % 5;
+            if (grade >= 38 && rem >= 3) {
+                grades[i] = grade + (5 - rem);
+            }
+        }
+        return grades;
     }
 }
