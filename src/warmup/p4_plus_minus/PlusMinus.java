@@ -22,10 +22,10 @@ public class PlusMinus {
         int negativeCount = 0;
         int zeroCount = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+        for (int i : arr) {
+            if (i > 0) {
                 positiveCount++;
-            } else if (arr[i] < 0) {
+            } else if (i < 0) {
                 negativeCount++;
             } else {
                 zeroCount++;
